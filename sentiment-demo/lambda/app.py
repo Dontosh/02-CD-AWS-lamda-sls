@@ -9,7 +9,7 @@ def handler(event, context):
     body = event["body"]
     sentiment = client.detect_sentiment(LanguageCode = "en", Text = body)
     return {
-            "statusCode": 200,
+            "statusCode": 300,
             "headers": {
                 "Content-Type": "application/json"
             },
